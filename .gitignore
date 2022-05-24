@@ -1,0 +1,11 @@
+node_modules
+dist
+tsconfig.tsbuildinfo
+packages/**/README.md
+!packages/sprinkles/README.md
+!packages/integration/README.md
+test-results
+
+.pnpm-debug.log
+.pnp.*
+.next

@@ -1,0 +1,23 @@
+{
+  "name": "mono-ts-core",
+  "version": "0.0.0",
+  "license": "MIT",
+  "sideEffects": false,
+  "main": "dist/mono-ts-core.cjs.js",
+  "module": "dist/mono-ts-core.esm.js",
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "module": "./dist/mono-ts-core.esm.js",
+      "default": "./dist/mono-ts-core.cjs.js"
+    }
+  },
+  "files": [
+    "/dist"
+  ],
+  "preconstruct": {
+    "entrypoints": [
+      "index.ts"
+    ]
+  }
+}

@@ -1,0 +1,9 @@
+{
+    "ignorePatterns": [
+        "**/dist/**"
+    ],
+    "extends": "facile/react",
+    "parserOptions": {
+        "project": "./tsconfig.json"
+    }
+}

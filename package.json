@@ -1,0 +1,39 @@
+{
+  "name": "mono-ts",
+  "version": "0.0.0",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "postinstall": "pnpm dev",
+    "dev": "preconstruct dev",
+    "build": "preconstruct build",
+    "watch": "preconstruct watch",
+    "lint": "manypkg check && eslint . --ext .ts,.tsx && tsc",
+    "lint-fix": "eslint . --ext .ts,.tsx --fix"
+  },
+  "preconstruct": {
+    "packages": [
+      "packages/*"
+    ]
+  },
+  "volta": {
+    "node": "14.16.0"
+  },
+  "dependencies": {
+    "@babel/core": "^7.13.10",
+    "@babel/preset-env": "^7.13.15",
+    "@babel/preset-react": "^7.13.13",
+    "@babel/preset-typescript": "^7.13.0",
+    "@changesets/cli": "^2.17.0",
+    "@manypkg/cli": "^0.19.1",
+    "@preconstruct/cli": "^2.1.5",
+    "@swc/core": "^1.2.192",
+    "@types/node": "^17.0.35",
+    "eslint": "^8.16.0",
+    "eslint-config-facile": "^0.5.0",
+    "fast-glob": "^3.2.7",
+    "prettier": "^2.6.2",
+    "ts-node": "^10.8.0",
+    "typescript": "^4.7.2"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "mono-ts-example-nextjs",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@builder.io/partytown": "^0.5.4",
+    "mono-ts-one": "^0.0.0",
+    "next": "^12.1.6",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@types/react": "^17",
+    "@types/react-dom": "^17"
+  },
+  "browserslist": [
+    ">0.3%",
+    "ie 11",
+    "safari 4",
+    "not op_mini all"
+  ]
+}
